@@ -333,7 +333,7 @@ function tallyUpDonations(runners) {
  *
 */
 
-// counter1 code
+// counter1 code (use closure, cause the inner function is using the scope of the outer function, u use closure when u dont want the data from that function to be used outside the scope of the outer one)
 function counterMaker() {
   let count = 0;
   return function counter() {
